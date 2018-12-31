@@ -1,0 +1,11 @@
+version: '1'
+
+services:
+
+ personal-website:
+    container_name: personal-website
+    build:
+      context: .
+      dockerfile: Dockerfile-prod
+    ports:
+      - '80:80'
